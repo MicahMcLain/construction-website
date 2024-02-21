@@ -22,8 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Theme>
-          <Sidebar />
-          <main>{children}</main>
+          <main>
+            <Sidebar />
+            {children}
+          </main>
         </Theme>
       </body>
     </html>
