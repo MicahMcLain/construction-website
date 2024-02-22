@@ -3,6 +3,8 @@ import classnames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container, Flex } from "@radix-ui/themes";
+import Image from "next/image";
+import logo from "../logo.png";
 
 const Sidebar = () => {
   const currentPath = usePathname();
@@ -12,10 +14,18 @@ const Sidebar = () => {
     { href: "/process", label: "Our Process" },
     { href: "/services", label: "Services" },
     { href: "/reviews", label: "Reviews" },
-    { href: "/contact", label: "Contact" },
+    // { href: "/contact", label: "Contact" },
   ];
+  const website = "https://calendly.com/hwarangarcher";
   return (
-    <nav className="sidebar">
+    <nav className="sidebar w-[300px] border-r-2 min-h-screen">
+      <Image
+        src={logo}
+        width={200}
+        height={200}
+        alt="logo"
+        className="max-h-[200px]"
+      ></Image>
       <Container>
         <Flex>
           <Link href="/"></Link>
@@ -34,10 +44,10 @@ const NavLinks = () => {
     { href: "/process", label: "Our Process" },
     { href: "/services", label: "Services" },
     { href: "/reviews", label: "Reviews" },
-    { href: "/contact", label: "Contact" },
+    // { href: "/contact", label: "Contact" },
   ];
   return (
-    <ul className="flex space-x-6">
+    <ul className="">
       {links.map((link) => (
         <li key={link.href}>
           <Link

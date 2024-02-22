@@ -3,7 +3,7 @@ import "./theme-config.css";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Theme } from "@radix-ui/themes";
+import { Theme, ThemePanel } from "@radix-ui/themes";
 import Sidebar from "./components/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,13 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme>
-          <main>
-            <Sidebar />
-            {children}
-          </main>
-        </Theme>
+      <body className={`${inter.className} flex items-start justify-between`}>
+        <Sidebar />
+        <main className="w-full h-full">{children}</main>
       </body>
     </html>
   );
