@@ -38,13 +38,13 @@ const Sidebar = () => {
       <a
         href={schedulingWebsite}
         target={"_blank"}
-        className="text-zinc-500 hover:text-zinc-800 transition-colors self-center pb-4"
+        className="text-zinc-600 hover:text-zinc-900 transition-colors self-center pb-4"
       >
         Schedule an Appointment
       </a>
 
       <a href={facebook} target={"_blank"} className="self-center">
-        <FaFacebook className="w-10 h-10" />
+        <FaFacebook color="blue" className="w-10 h-10" />
       </a>
     </nav>
   );
