@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container, Flex } from "@radix-ui/themes";
 import Image from "next/image";
-import logo from "../logo.png";
+import logo from "../logo_1.png";
+import { FaFacebook } from "react-icons/fa";
 
 const Sidebar = () => {
   const currentPath = usePathname();
@@ -16,22 +17,35 @@ const Sidebar = () => {
     { href: "/reviews", label: "Reviews" },
     // { href: "/contact", label: "Contact" },
   ];
-  const website = "https://calendly.com/hwarangarcher";
+  const schedulingWebsite = "https://calendly.com/hwarangarcher";
+  const facebook =
+    "https://www.facebook.com/profile.php?id=61556115710244&mibextid=sCpJLy";
   return (
-    <nav className="sidebar w-[300px] border-r-2 min-h-screen">
+    <nav className="sidebar">
       <Image
         src={logo}
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         alt="logo"
-        className="max-h-[200px]"
+        className="max-h-[300px] pb-2"
       ></Image>
-      <Container>
-        <Flex>
+      <Container className="pb-4">
+        <Flex className="flex-col space-y-4">
           <Link href="/"></Link>
           <NavLinks />
         </Flex>
       </Container>
+      <a
+        href={schedulingWebsite}
+        target={"_blank"}
+        className="text-zinc-500 hover:text-zinc-800 transition-colors self-center pb-4"
+      >
+        Schedule an Appointment
+      </a>
+
+      <a href={facebook} target={"_blank"} className="self-center">
+        <FaFacebook className="w-10 h-10" />
+      </a>
     </nav>
   );
 };
