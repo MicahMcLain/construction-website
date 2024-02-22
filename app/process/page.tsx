@@ -9,11 +9,19 @@ const OurProcessPage = () => {
 
       <ProcessBubble title="1" description="Initial Consultation" />
 
-      <ReverseProcessBubble title="2" description="Design & Planning" />
+      <ReverseProcessBubble title="2" description="Detailed Quote" />
 
-      <ProcessBubble title="3" description="Construction" />
+      <ProcessBubble title="3" description="Design & Planning" />
 
-      <ReverseProcessBubble title="4" description="Final Walkthrough" />
+      <ReverseProcessBubble title="4" description="Retainer Contract" />
+
+      <ProcessBubble title="5" description="Shopping" />
+
+      <ReverseProcessBubble title="6" description="Project Start" />
+
+      <ProcessBubble title="7" description="Time to Work" />
+
+      <ReverseProcessBubble title="8" description="Project Completion" />
     </div>
   );
 };

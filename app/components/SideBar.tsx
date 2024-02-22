@@ -1,11 +1,10 @@
 "use client";
+import { Container, Flex } from "@radix-ui/themes";
 import classnames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Container, Flex } from "@radix-ui/themes";
-import Image from "next/image";
 import logo from "../logo_1.png";
-import { FaFacebook } from "react-icons/fa";
 
 const Sidebar = () => {
   const currentPath = usePathname();
@@ -15,11 +14,9 @@ const Sidebar = () => {
     { href: "/process", label: "Our Process" },
     { href: "/services", label: "Services" },
     { href: "/reviews", label: "Reviews" },
-    // { href: "/contact", label: "Contact" },
   ];
   const schedulingWebsite = "https://calendly.com/hwarangarcher";
-  const facebook =
-    "https://www.facebook.com/profile.php?id=61556115710244&mibextid=sCpJLy";
+
   return (
     <nav className="sidebar">
       <Image
@@ -38,13 +35,9 @@ const Sidebar = () => {
       <a
         href={schedulingWebsite}
         target={"_blank"}
-        className="text-zinc-600 hover:text-zinc-900 transition-colors self-center pb-4"
+        className="text-zinc-600 hover:text-black transition-colors self-center pb-4"
       >
         Schedule an Appointment
-      </a>
-
-      <a href={facebook} target={"_blank"} className="self-center">
-        <FaFacebook color="blue" className="w-10 h-10" />
       </a>
     </nav>
   );
@@ -58,7 +51,6 @@ const NavLinks = () => {
     { href: "/process", label: "Our Process" },
     { href: "/services", label: "Services" },
     { href: "/reviews", label: "Reviews" },
-    // { href: "/contact", label: "Contact" },
   ];
   return (
     <ul className="">
@@ -67,7 +59,7 @@ const NavLinks = () => {
           <Link
             className={classnames({
               "nav-link": true,
-              "!text-zinc-900": currentPath === link.href,
+              "!text-black": currentPath === link.href,
             })}
             href={link.href}
           >

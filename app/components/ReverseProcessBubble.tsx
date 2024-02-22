@@ -10,13 +10,13 @@ const ReverseProcessBubble = ({
   return (
     <div className="pl-2 pr-2 relative flex items-center justify-end">
       {/* Description */}
-      <div className=" top-1/2 transform -translate-y-1/2 mr-3 text-sm text-gray-700">
+      <div className=" top-1/2 transform -translate-y-1/2 m-3 text-sm text-gray-700">
         {description}
       </div>
       {/* Tail */}
-      <div className="w-2/3 top-1/2 transform -translate-y-1/2 h-0 border-t-4 border-l-4 border-blue-500"></div>
+      <div className="w-2/3 top-1/2 transform -translate-y-1/2 h-0 border-t-4 border-l-4 border-amber-600"></div>
       {/* Circle */}
-      <div className="w-20 h-20 bg-blue-500 rounded-full flex justify-center items-center text-white font-bold text-lg">
+      <div className="w-20 h-20 bg-amber-600 rounded-full flex justify-center items-center text-white font-bold text-lg">
         {title}
       </div>
     </div>
