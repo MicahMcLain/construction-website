@@ -30,7 +30,7 @@ const Sidebar = () => {
         className="max-h-[300px] pb-2"
       ></Image>
       <Container className="pb-4">
-        <Flex className="flex-col space-y-4">
+        <Flex className="flex-col space-y-4 gap">
           <Link href="/"></Link>
           <NavLinks />
         </Flex>
@@ -63,7 +63,7 @@ const NavLinks = () => {
   return (
     <ul className="">
       {links.map((link) => (
-        <li key={link.href}>
+        <li className="pb-3" key={link.href}>
           <Link
             className={classnames({
               "nav-link": true,
