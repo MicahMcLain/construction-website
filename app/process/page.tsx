@@ -4,7 +4,7 @@ import ReverseProcessBubble from "../components/ReverseProcessBubble";
 
 const OurProcessPage = () => {
   return (
-    <div className="">
+    <div className="bg-gray-300">
       <h1 className="flex justify-center text-2xl pt-2">Our Process</h1>
 
       <ProcessBubble title="1" description="Initial Consultation" />
