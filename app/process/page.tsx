@@ -13,9 +13,9 @@ const OurProcessPage = () => {
 
       <ProcessBubble title="3" description="Design & Planning" />
 
-      <ReverseProcessBubble title="4" description="Retainer Contract" />
+      <ReverseProcessBubble title="4" description="Shopping" />
 
-      <ProcessBubble title="5" description="Shopping" />
+      <ProcessBubble title="5" description="Retainer Contract" />
 
       <ReverseProcessBubble title="6" description="Project Start" />
 

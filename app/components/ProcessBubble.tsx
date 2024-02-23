@@ -10,7 +10,7 @@ const ProcessBubble = ({
   return (
     <div className="pl-2 pr-2 relative flex items-center">
       {/* Circle */}
-      <div className="w-20 h-20 bg-amber-400 rounded-full flex justify-center items-center text-white font-bold text-lg">
+      <div className="w-32 h-32 bg-amber-400 rounded-full flex justify-center items-center text-white font-bold text-xl">
         {title}
       </div>
       {/* Tail */}

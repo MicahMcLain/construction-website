@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="py-16 bg-gray-300">
+    <section className="py-16 px-4 bg-gray-300">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">About Us</h2>
         <p className="mb-4">
@@ -32,10 +32,33 @@ const AboutUs = () => {
   );
 };
 
+const MissionStatement = () => {
+  return (
+    <section className="py-16 px-4 bg-gray-300">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold mb-8">Our Mission</h2>
+        <p className="mb-4">
+          Our mission is to provide outstanding Home Improvement and Remodeling
+          value, building on our reputation of professionalism, consistency, and
+          integrity in our services and products, responsiveness to clients and
+          use of innovative and traditional quality solutions.
+        </p>
+        <p className="mb-4">
+          We strive to build lasting relationships with our clients, suppliers,
+          and subcontractors based on mutual respect, trust, and integrity. Our
+          goal is to be the construction company of choice for all our clients'
+          construction needs.
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const AboutPage = () => {
   return (
     <div className="bg-gray-300">
       <AboutUs />
+      <MissionStatement />
     </div>
   );
 };
