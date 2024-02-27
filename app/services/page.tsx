@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { CldImage } from "next-cloudinary";
 const Services = () => {
   return (
     <section className="py-16">
@@ -9,6 +10,12 @@ const Services = () => {
           <ServiceCard
             title="Kitchens"
             description="Transform your kitchen with our expert remodeling services."
+          />
+          <CldImage
+            width="200"
+            height="200"
+            src="acen7cjy0sdo5dhexkal"
+            alt="testingImg"
           />
           <ServiceCard
             title="Bathrooms"
