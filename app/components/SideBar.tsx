@@ -17,7 +17,7 @@ const Sidebar = () => {
     { href: "/services", label: "Services" },
     { href: "/reviews", label: "Reviews" },
   ];
-  const schedulingWebsite = "https://calendly.com/hwarangarcher";
+  const schedulingWebsite = "https://calendly.com/tribcontractservices";
 
   return (
     <nav className="sidebar">

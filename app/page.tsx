@@ -56,7 +56,7 @@ const About = () => {
     </section>
   );
 };
-const schedulingWebsite = "https://calendly.com/hwarangarcher";
+const schedulingWebsite = "https://calendly.com/tribcontractservices";
 const Contact = () => {
   return (
     <section id="contact" className="py-16 text-center">

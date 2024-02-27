@@ -36,6 +36,9 @@ const Services = () => {
   );
 };
 
+//add things to consider before starting a project
+//add in image carousels for before and after photos
+
 const ServiceCard = ({
   title,
   description,
