@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import { FaFacebook } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FiMenu, FiX } from "react-icons/fi";
 import { Container, Flex } from "@radix-ui/themes";
 import Link from "next/link";
+import { useState } from "react";
+import { FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { FiMenu, FiX } from "react-icons/fi";
+import { IoMdMail } from "react-icons/io";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

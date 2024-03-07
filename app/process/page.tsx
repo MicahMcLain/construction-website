@@ -1,4 +1,3 @@
-import React from "react";
 import ProcessBubble from "../components/ProcessBubble";
 import ReverseProcessBubble from "../components/ReverseProcessBubble";
 

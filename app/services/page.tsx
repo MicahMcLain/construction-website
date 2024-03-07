@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { CldImage } from "next-cloudinary";
+import React from "react";
 
 const Services = () => {
   return (
@@ -12,12 +11,7 @@ const Services = () => {
             title="Kitchens"
             description="Transform your kitchen with our expert remodeling services."
           />
-          <CldImage
-            width="200"
-            height="200"
-            src="acen7cjy0sdo5dhexkal"
-            alt="testingImg"
-          />
+
           <ServiceCard
             title="Bathrooms"
             description="Create your dream bathroom with our professional renovation solutions."
@@ -44,68 +38,6 @@ const Services = () => {
   );
 };
 
-//grab all photos from cloudinary
-
-// interface Photo {
-//   id: string;
-//   url: string;
-// }
-
-// const fetchPhotos = async (): Promise<Photo[]> => {
-//   const response = await fetch(
-//     "https://api.cloudinary.com/v1_1/dw9srpmjb/image/list",
-//     {
-//       method: "GET",
-//       headers: {
-//         Authorization: `Bearer ${process.env.CLOUDINARY_API_KEY}`,
-//       },
-//     }
-//   );
-
-//   if (!response.ok) {
-//     throw new Error("Failed to fetch photos from Cloudinary");
-//   }
-
-//   const data = await response.json();
-//   return data.resources.map((photo: any) => ({
-//     id: photo.public_id,
-//     url: photo.secure_url,
-//   }));
-// };
-
-// const PhotoGallery: React.FC = () => {
-//   const [photos, setPhotos] = useState<Photo[]>([]);
-
-//   useEffect(() => {
-//     const getPhotos = async () => {
-//       try {
-//         const fetchedPhotos = await fetchPhotos();
-//         setPhotos(fetchedPhotos);
-//       } catch (error) {
-//         console.error("Error fetching photos:", error);
-//       }
-//     };
-
-//     getPhotos();
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Photo Gallery</h1>
-//       <div className="photo-container">
-//         {photos.map((photo) => (
-//           <img key={photo.id} src={photo.url} alt="Cloudinary Photo" />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default PhotoGallery;
-
-//add things to consider before starting a project
-//add in image carousels for before and after photos
-
 const ServiceCard = ({
   title,
   description,
@@ -125,7 +57,6 @@ const ServicesPage = () => {
   return (
     <div>
       <Services />
-      {/* <PhotoGallery /> */}
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import BBBReview from "../components/BBBReview";
 import YelpReview from "../components/YelpReview";
 

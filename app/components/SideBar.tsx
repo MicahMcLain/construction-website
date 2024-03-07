@@ -3,8 +3,8 @@ import { Container, Flex } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../logo_1.png";
-import YelpReview from "./YelpReview";
 import BBBReview from "./BBBReview";
+import YelpReview from "./YelpReview";
 
 const Sidebar = () => {
   const schedulingWebsite = "https://calendly.com/tribcontractservices";

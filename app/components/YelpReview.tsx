@@ -1,5 +1,5 @@
-import React from "react";
 import { BsYelp } from "react-icons/bs";
+
 const YelpReview = () => {
   return (
     <a
