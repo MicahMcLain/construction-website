@@ -1,8 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["seal-cincinnati.bbb.org", "res.cloudinary.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname:
+          "https://seal-cincinnati.bbb.org/customer-reviews/badge-7-bbb-90045568.png",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
+
   async headers() {
     return [
       {
