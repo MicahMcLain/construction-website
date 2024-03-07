@@ -8,9 +8,11 @@ const BBBReview = () => {
       rel="nofollow"
       className="self-center pb-4 pr-4 mb-4"
     >
-      <img
+      <Image
         src="https://seal-cincinnati.bbb.org/customer-reviews/badge-7-bbb-90045568.png"
         alt="Tri B Contract Services, LLC BBB Business Review"
+        width={150}
+        height={50}
       />
     </a>
   );
