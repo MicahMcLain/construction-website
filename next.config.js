@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["seal-cincinnati.bbb.org"],
-  },
-
   async headers() {
     return [
       {
