@@ -1,5 +1,6 @@
 import BBBReview from "../components/BBBReview";
 import YelpReview from "../components/YelpReview";
+import { Metadata } from "next";
 
 const Review = ({
   name,
@@ -59,3 +60,8 @@ const ReviewsPage = () => {
 };
 
 export default ReviewsPage;
+
+export const metadata: Metadata = {
+  title: "Tri-B Contracting - Reviews",
+  description: "Tri-B Contracting Services",
+};

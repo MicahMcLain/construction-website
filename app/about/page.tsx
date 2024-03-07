@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 const AboutUs = () => {
   return (
     <section className="py-8 md:py-16 px-4 bg-gray-300">
@@ -66,3 +68,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+export const metadata: Metadata = {
+  title: "Tri-B Contracting - About Us",
+  description: "Tri-B Contracting Services",
+};

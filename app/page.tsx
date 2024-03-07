@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 
 const Hero = () => {
@@ -88,3 +89,8 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+export const metadata: Metadata = {
+  title: "Tri-B Contracting - Home",
+  description: "Homepage for Tri-B Contracting Services",
+};

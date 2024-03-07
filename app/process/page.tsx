@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import ProcessBubble from "../components/ProcessBubble";
 import ReverseProcessBubble from "../components/ReverseProcessBubble";
 
@@ -28,3 +29,7 @@ const OurProcessPage = () => {
 };
 
 export default OurProcessPage;
+export const metadata: Metadata = {
+  title: "Tri-B Contracting - Process",
+  description: "Tri-B Contracting Services",
+};

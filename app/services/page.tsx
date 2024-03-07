@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+import { Metadata } from "next";
 
 const Services = () => {
   return (
@@ -62,3 +62,8 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
+export const metadata: Metadata = {
+  title: "Tri-B Contracting - Services",
+  description: "Tri-B Contracting Services",
+};
