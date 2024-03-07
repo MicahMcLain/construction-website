@@ -8,8 +8,8 @@ const AboutUs = () => {
           About Us
         </h2>
         <p className="text-sm md:text-base mb-4">
-          Construction Co. is a leading construction company dedicated to
-          providing high-quality services for both residential and commercial
+          Tri-B Contracting Services is a leading construction company dedicated
+          to providing high-quality services for both residential and commercial
           projects. With years of experience in the industry, we have built a
           strong reputation for delivering exceptional results.
         </p>
@@ -20,9 +20,9 @@ const AboutUs = () => {
           clients to ensure their vision is brought to life.
         </p>
         <p className="text-sm md:text-base mb-4">
-          At Construction Co., we prioritize safety, integrity, and customer
-          satisfaction. Whether it&apos;s new construction, renovation, or
-          restoration, you can trust us to deliver superior craftsmanship and
+          At Tri-B Contracting Services, we prioritize safety, integrity, and
+          customer satisfaction. Whether it&apos;s new construction, renovation,
+          or restoration, you can trust us to deliver superior craftsmanship and
           attention to detail.
         </p>
         <p className="text-sm md:text-base mb-4">
