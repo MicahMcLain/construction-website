@@ -61,7 +61,7 @@ const Contact = () => {
     <section id="contact" className="py-16 text-center">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
-        <p>Let's discuss your project.</p>
+        <p>Let&apos;s discuss your project.</p>
         <p>Phone: 513-882-9110</p>
         <p>Email: tribcontractingservices@gmail.com</p>
         <a

@@ -65,7 +65,7 @@ const Sidebar = () => {
           href={schedulingWebsite}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-zinc-600 hover:text-white transition-colors self-center pb-4 mb-4"
+          className="text-zinc-600 hover:text-black transition-colors self-center pb-4 mb-4"
         >
           Schedule an Appointment
         </a>

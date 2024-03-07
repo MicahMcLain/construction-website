@@ -19,7 +19,7 @@ const AboutUs = () => {
         </p>
         <p className="text-sm md:text-base mb-4">
           At Construction Co., we prioritize safety, integrity, and customer
-          satisfaction. Whether it's new construction, renovation, or
+          satisfaction. Whether it&apos;s new construction, renovation, or
           restoration, you can trust us to deliver superior craftsmanship and
           attention to detail.
         </p>
@@ -48,8 +48,8 @@ const MissionStatement = () => {
         <p className="text-sm md:text-base mb-4">
           We strive to build lasting relationships with our clients, suppliers,
           and subcontractors based on mutual respect, trust, and integrity. Our
-          goal is to be the construction company of choice for all our clients'
-          construction needs.
+          goal is to be the construction company of choice for all our
+          clients&apos; construction needs.
         </p>
       </div>
     </section>
