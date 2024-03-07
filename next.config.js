@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname:
-          "https://seal-cincinnati.bbb.org/customer-reviews/badge-7-bbb-90045568.png",
-        port: "",
-        pathname: "/**",
-      },
-    ],
+    domains: ["seal-cincinnati.bbb.org"],
   },
 
   async headers() {
