@@ -35,6 +35,12 @@ const Reviews = () => {
             content="Roger did a complete remodel of our master bath in early 2023. He is the best contractor I have worked with (out of about 20)! Excellent quality, very conscientious, polite, super hard worker, leaves the site cleaned up every day, and responsive to questions or concerns. I was so happy with his work I hired him to do some plumbing and installation of a utility tub at my daughter's house. I would highly recommend him!"
             from="Review from Yelp"
           />
+          <Review
+            name="Kristina C"
+            date="February 23, 2024"
+            content="Roger did our full basement remodel from electrical to plumbing and all floors/finishes and appliances. Literally everything top to bottom. He includes it all in his pricing and does an incredible job keeping you on budget throughout the process by using averages for his materials. He is completely trustworthy, actually shows up on time and ready to go. We ran into water issues on our project and he even moved around some of his other jobs to help accommodate us so we could get a foundation company in before he moved forward. 10/10 would recommend."
+            from="Review from BBB"
+          />
         </div>
       </div>
     </section>
