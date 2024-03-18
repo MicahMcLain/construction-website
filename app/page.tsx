@@ -48,7 +48,7 @@ const About = () => {
         <h2 className="text-3xl font-bold mb-8">
           <Link href="/about">About Us</Link>
         </h2>
-        <p className="max-w-xl mx-auto">
+        <p className="max-w-xl mx-auto px-4 md:px-0">
           We are a dedicated team of construction professionals committed to
           excellence in every project we undertake.
         </p>
