@@ -6,11 +6,7 @@ import { CldImage } from "next-cloudinary";
 const ServiceCardCarousel: React.FC<{ urls: string[] }> = ({ urls }) => {
   return (
     <div className="h-64 w-64 md:h-auto md:w-auto py-8 flex justify-center mb-20">
-      <Carousel
-        showThumbs={false}
-        infiniteLoop
-        // className="mx-auto justify-center flex"
-      >
+      <Carousel showThumbs={false} infiniteLoop>
         {urls.map((public_id, index) => (
           <div key={index}>
             <CldImage

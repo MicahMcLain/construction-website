@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Metadata } from "next";
 import ServiceCardCarousel from "../components/Carousel";
 
 const Services = () => {
