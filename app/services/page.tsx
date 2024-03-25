@@ -53,36 +53,7 @@ const ServiceCard = ({
   );
 };
 
-//get all pictures from cloudinary
-export async function getStaticProps() {
-  const results = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/resources/image`, {
-    headers: {
-     Authorization: `Basic ${Buffer.from(process.env.CLOUDINARY_API_KEY + ':' + process.env.CLOUDINARY_API_SECRET).toString('base64')}`
-    }
-  }).then(res => res.json());
-  console.log('results:', results);
-  const { resources, next_cursor: nextCursor } = results;
-  const images = resources.map((resource: {
-    asset_id: any; public_id: string; secure_url: string; height: number; width: number;
-  }) => {
-    const { width, height } = resource;
-    return {
-      id: resource.asset_id,
-      title: resource.public_id,
-      url: resource.secure_url,
-      width,
-      height
-    }
-  });
-  return {
-    props: {
-      images
-    }
-  }
-}
-
-const ServicesPage = ({ images }: { images: Array<{ id: string; title: string; url: string; width: number; height: number }> }) => {
-  console.log('images:', images);
+const ServicesPage = () => {
   return (
     <div>
       <Services />
