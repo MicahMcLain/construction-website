@@ -16,3 +16,8 @@ body {
     @apply text-zinc-600 hover:text-black transition-colors pl-4;
   }
 }
+@media (max-width: 768px) {
+  .service-wrapper {
+    margin-bottom: 20px;
+  }
+}

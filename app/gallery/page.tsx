@@ -2,6 +2,7 @@
 import React from "react";
 import ServiceCardCarousel from "../components/Carousel";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CldImage } from "next-cloudinary";
 
 const GalleryPage = () => {
@@ -13,19 +14,8 @@ const GalleryPage = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center">
-      <Carousel showThumbs={false} infiniteLoop autoPlay>
-        {public_ids.map((public_id, index) => (
-          <div key={index}>
-            <CldImage
-              src={public_id}
-              alt="Service image"
-              width="200"
-              height="200"
-            />
-          </div>
-        ))}
-      </Carousel>
+    <div className="flex justify-center">
+      <ServiceCardCarousel urls={public_ids} />
     </div>
   );
 };

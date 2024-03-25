@@ -1,18 +1,24 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CldImage } from "next-cloudinary";
 
 const ServiceCardCarousel: React.FC<{ urls: string[] }> = ({ urls }) => {
   return (
-    <div>
+    <div className="h-64 w-64 md:h-auto md:w-auto py-8 flex justify-center mb-20">
       <Carousel
-        showThumbs={false} // Optional: Set to true to display thumbnails
-        // infiniteLoop // Enable continuous image rotation
-        autoPlay // Optional: Set to true for automatic image transition
+        showThumbs={false}
+        infiniteLoop
+        // className="mx-auto justify-center flex"
       >
-        {urls.map((url, index) => (
+        {urls.map((public_id, index) => (
           <div key={index}>
-            <CldImage src={url} alt="Service image" width="200" height="200" />
+            <CldImage
+              src={public_id}
+              alt="Service image"
+              width={200}
+              height={200}
+            />
           </div>
         ))}
       </Carousel>
