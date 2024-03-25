@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import { Metadata } from "next";
+import Carousel from "../components/Carousel";
+import ServiceCardCarousel from "../components/Carousel";
 
 const Services = () => {
   return (
@@ -16,18 +19,22 @@ const Services = () => {
             title="Bathrooms"
             description="Create your dream bathroom with our professional renovation solutions."
           />
+
           <ServiceCard
             title="Interior Remodels"
             description="Revitalize your interior spaces with our remodeling expertise."
           />
+
           <ServiceCard
             title="Basements"
             description="Maximize your living space with our basement finishing services."
           />
+
           <ServiceCard
             title="Decks"
             description="Enhance your outdoor living experience with a custom-built deck."
           />
+
           <ServiceCard
             title="Outdoor Living Spaces"
             description="Design and construct beautiful outdoor living areas tailored to your needs."
@@ -53,17 +60,33 @@ const ServiceCard = ({
   );
 };
 
+const basement_public_ids = [
+  "Roger's Website/Basements/jo22h8cq4zhfgtnjhh0e",
+  "Roger's Website/Basements/wpvohs6pirfai04porp3",
+  "Roger's Website/Basements/v1gzrdphhxmhndxxqntv",
+  "Roger's Website/Basements/m0ez2ly2fvr0q3p4hlrw",
+  "Roger's Website/Basements/f3mcbcmmtqby4eycq3lp",
+  "Roger's Website/Basements/xxbs3oy8dwpbdgvxxa0a",
+  "Roger's Website/Basements/bwcdge2zzldkq57zqutv",
+  "Roger's Website/Basements/tynson8gdcyhttd3npd7",
+  "Roger's Website/Basements/phqfdtbd36rfbmlazxuz",
+];
+// const basement_images = basement_public_ids.map((publicId) => ({
+//   public_id: publicId,
+// }));
+
 const ServicesPage = () => {
   return (
     <div>
       <Services />
+      <ServiceCardCarousel urls={basement_public_ids}></ServiceCardCarousel>
     </div>
   );
 };
 
 export default ServicesPage;
 
-export const metadata: Metadata = {
-  title: "Tri-B Contracting - Services",
-  description: "Tri-B Contracting Services",
-};
+// export const metadata: Metadata = {
+//   title: "Tri-B Contracting - Services",
+//   description: "Tri-B Contracting Services",
+// };
