@@ -13,6 +13,7 @@ const Services = () => {
               title="Kitchens"
               description="Transform your kitchen with our expert remodeling services."
             />
+
             <ServiceCardCarousel urls={kitchen_public_ids} />
           </div>
           <div className="service-wrapper">
@@ -20,6 +21,7 @@ const Services = () => {
               title="Bathrooms"
               description="Create your dream bathroom with our professional renovation solutions."
             />
+
             <ServiceCardCarousel urls={bathroom_public_ids} />
           </div>
 
