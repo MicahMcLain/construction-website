@@ -1,5 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.module.rules.push({
+        test: /\/uploads\/.*\.+(png|jpg|jpeg|gif|svg)$/,
+        use: {
+          loader: "next-image-loader",
+          options: {
+            loader: "cloudinary",
+            path: `https://res.cloudinary.com/${process.send.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
+          },
+        },
+      });
+    }
+    return config;
+  },
+
   images: {
     remotePatterns: [
       {
@@ -11,5 +27,3 @@ const nextConfig = {
     ],
   },
 };
-
-module.exports = nextConfig;
