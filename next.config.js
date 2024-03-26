@@ -8,7 +8,7 @@ module.exports = {
           loader: "next-image-loader",
           options: {
             loader: "cloudinary",
-            path: `https://res.cloudinary.com/${process.send.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
+            path: `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
           },
         },
       });
