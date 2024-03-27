@@ -61,7 +61,7 @@ const schedulingWebsite = "https://calendly.com/tribcontractservices";
 const Contact = () => {
   return (
     <section id="contact" className="py-16 text-center">
-      <div className="bg-white p-6 shadow-lg mx-auto w-1/3 opacity-75">
+      <div className="bg-white p-6 shadow-lg mx-auto opacity-75">
         <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
         <p>Let&apos;s discuss your project.</p>
         <p>Phone: 513-882-9110</p>
