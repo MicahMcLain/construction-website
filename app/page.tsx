@@ -4,7 +4,7 @@ import backgroundImage from "./background.png";
 
 const Hero = () => {
   return (
-    <section className="text-white py-16 text-center">
+    <section className="text-color py-16 text-center">
       <h2 className="text-4xl font-bold mb-4">Building Dreams Together</h2>
       <p className="text-xl">Your trusted partner in construction projects</p>
     </section>
@@ -13,7 +13,7 @@ const Hero = () => {
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 text-center text-white">
+    <section id="services" className="py-16 text-center text-color">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">
           <Link href="/services">Our Services</Link>
@@ -48,7 +48,7 @@ const Services = () => {
 
 const About = () => {
   return (
-    <section id="about" className="py-16 text-center text-white">
+    <section id="about" className="py-16 text-center text-color">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">
           <Link href="/about">About Us</Link>
@@ -64,9 +64,9 @@ const About = () => {
 const schedulingWebsite = "https://calendly.com/tribcontractservices";
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 text-center text-white">
+    <section id="contact" className="py-16 text-center text-color">
       <div className="p-6 mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-white">Contact Us</h2>
+        <h2 className="text-3xl font-bold mb-8 text-color">Contact Us</h2>
         <p className="text-lg">Let&apos;s discuss your project.</p>
         <p className="text-lg">Phone: 513-882-9110</p>
         <p className="text-lg">Email: tribcontractingservices@gmail.com</p>

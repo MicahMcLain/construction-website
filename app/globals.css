@@ -15,6 +15,9 @@ body {
   .nav-link {
     @apply text-zinc-600 hover:text-black transition-colors pl-4;
   }
+  .text-color {
+    @apply text-white;
+  }
 }
 @media (max-width: 768px) {
   .service-wrapper {
