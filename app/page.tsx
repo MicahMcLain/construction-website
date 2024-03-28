@@ -4,7 +4,7 @@ import backgroundImage from "./background.png";
 
 const Hero = () => {
   return (
-    <section className="bg-gray-300 py-16 text-center opacity-75">
+    <section className="text-white py-16 text-center">
       <h2 className="text-4xl font-bold mb-4">Building Dreams Together</h2>
       <p className="text-lg">Your trusted partner in construction projects</p>
     </section>
@@ -13,24 +13,24 @@ const Hero = () => {
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 text-center">
+    <section id="services" className="py-16 text-center text-white">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">
           <Link href="/services">Our Services</Link>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 shadow-lg opacity-75">
+          <div className="p-6 shadow-lg">
             <h3 className="text-xl font-bold mb-4">Construction Management</h3>
             <p>From planning to completion, we handle it all.</p>
           </div>
-          <div className="bg-white p-6 shadow-lg opacity-75">
+          <div className="p-6 shadow-lg">
             <h3 className="text-xl font-bold mb-4">Design & Build</h3>
             <p>
               Turn your vision into reality with our design and construction
               expertise.
             </p>
           </div>
-          <div className="bg-white p-6 shadow-lg opacity-75">
+          <div className="p-6 shadow-lg">
             <h3 className="text-xl font-bold mb-4">Renovation & Restoration</h3>
             <p>
               Breathe new life into old spaces with our renovation services.
@@ -44,7 +44,7 @@ const Services = () => {
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-300 opacity-75 py-16 text-center">
+    <section id="about" className="py-16 text-center text-white">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8">
           <Link href="/about">About Us</Link>
@@ -60,9 +60,9 @@ const About = () => {
 const schedulingWebsite = "https://calendly.com/tribcontractservices";
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 text-center">
-      <div className="bg-white p-6 shadow-lg mx-auto opacity-75">
-        <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
+    <section id="contact" className="py-16 text-center text-white">
+      <div className="p-6 mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-white">Contact Us</h2>
         <p>Let&apos;s discuss your project.</p>
         <p>Phone: 513-882-9110</p>
         <p>Email: tribcontractingservices@gmail.com</p>
