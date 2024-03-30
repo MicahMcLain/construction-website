@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/SideBar";
 import "./globals.css";
 import "./theme-config.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-T48MB0YXW3"
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T48MB0YXW3');`}
+        </Script>
+      </head>
+
       <body
         className={`${inter.className} flex items-start justify-between bg-stone-200`}
       >
