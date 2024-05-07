@@ -69,5 +69,5 @@ export default ReviewsPage;
 
 export const metadata: Metadata = {
   title: "Tri-B Contracting - Reviews",
-  description: "Tri-B Contracting Services",
+  description: "Tri-B Contract Services",
 };

@@ -31,5 +31,5 @@ const OurProcessPage = () => {
 export default OurProcessPage;
 export const metadata: Metadata = {
   title: "Tri-B Contracting - Process",
-  description: "Tri-B Contracting Services",
+  description: "Tri-B Contract Services",
 };

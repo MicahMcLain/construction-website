@@ -69,7 +69,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold mb-8 text-color">Contact Us</h2>
         <p className="text-lg">Let&apos;s discuss your project.</p>
         <p className="text-lg">Phone: 513-882-9110</p>
-        <p className="text-lg">Email: tribcontractingservices@gmail.com</p>
+        <p className="text-lg">Email: tribcontractservices@gmail.com</p>
         <a
           href={schedulingWebsite}
           target={"_blank"}
@@ -88,8 +88,8 @@ const HomePage = () => {
       className="text-center py-16"
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
-        backgroundSize: "cover", // Adjust background size as needed
-        backgroundPosition: "center", // Adjust position as needed
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Hero />
@@ -104,5 +104,5 @@ export default HomePage;
 
 export const metadata: Metadata = {
   title: "Tri-B Contracting - Home",
-  description: "Homepage for Tri-B Contracting Services",
+  description: "Homepage for Tri-B Contract Services",
 };

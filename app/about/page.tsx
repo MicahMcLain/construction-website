@@ -70,5 +70,5 @@ const AboutPage = () => {
 export default AboutPage;
 export const metadata: Metadata = {
   title: "Tri-B Contracting - About Us",
-  description: "Tri-B Contracting Services",
+  description: "Tri-B Contract Services",
 };
